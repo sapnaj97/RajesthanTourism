@@ -1,0 +1,693 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/stylenav.css">
+<link rel="stylesheet" href="css/empty.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/clean.tabs.min.js"></script> 
+<script type="text/javascript">
+		$(function() { 
+			$("body").cleanTabs({
+				"speed": 600
+			});
+		});
+	</script> 
+<script type="text/javascript">
+    $(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
+	
+        function scrollToTop() {
+            //$(window).scrollTop(0);
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			
+        }
+	
+    
+</script>
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="logo"><img src="images/logo01.jpg"></div>
+    <p class="number"><span class="contact">CALL NOW:</span>+91 1234567890</p>
+    <div class="menu_contain">
+      <ul class="dropdown">
+        <li> <a href="#">Home</a>
+          <ul>
+            <li><a href="#">Text1</a></li>
+            <li><a href="#">Text2</a></li>
+            <li><a href="#">Text3</a></li>
+            <li><a href="#">Text4</a></li>
+            <li><a href="#">Text5</a></li>
+          </ul>
+        </li>
+        <li> <a href="www.about us">About Us</a>
+          <ul>
+            <li><a href="#">Text6</a></li>
+            <li><a href="#">Text7</a></li>
+            <li><a href="#">Text8</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Rates</a>
+          <ul>
+            <li><a href="#">Text9</a></li>
+            <li><a href="#">Text10</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Service</a>
+          <ul>
+            <li><a href="#">Text11</a></li>
+            <li><a href="#">Text12</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="menuimg" onclick="openNav()">☰</div>
+    <div id="mySidenav" class="sidenav">
+      <div class="pagewrap"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li class="menu_accordion"> <a href="#">Home</a> </li>
+          <ul class="menu_panel">
+            <li><a href="#">Text1</a></li>
+            <li><a href="#">Text2</a></li>
+            <li><a href="#">Text3</a></li>
+            <li><a href="#">Text4</a></li>
+            <li><a href="#">Text5</a></li>
+          </ul>
+          <li class="menu_accordion"> <a href="#">About Us</a> </li>
+          <ul class="menu_panel">
+            <li><a href="#">Text6</a></li>
+            <li><a href="#">Text7</a></li>
+            <li><a href="#">Text8</a></li>
+          </ul>
+          <li class="menu_accordion"> <a href="#">Rates</a> </li>
+          <ul class="menu_panel">
+            <li><a href="#">Text9</a></li>
+            <li><a href="#">Text10</a></li>
+          </ul>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner">
+  <video class="background-video" autoplay loop muted poster="images/desert001.mp4">
+    <source src="images/desert001.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="bg-cont">
+      <div class="code">
+        <div class="text-box" >
+          <h2>Place Your Requirement</h2>
+          <ul class="form">
+            <select>
+              <option value="select-your-car-types">Select your car types </option>
+              <option value="Convertibles">Convertibles</option>
+              <option value="Micro-Cars">Micro Cars</option>
+              <option value="City-Cars">City Cars</option>
+              <option value="Hatchbacks">Hatchbacks</option>
+              <option value="Sports-Utility Vehicles">Sports Utility Vehicles</option>
+              <option value="Sedans">Sedans</option>
+              <option value="Subcompact Cars">Subcompact Cars</option>
+              <option value="Family-Cars">Family Cars</option>
+              <option value="CUV">CUV</option>
+            </select>
+            <li>
+              <input type="text" id="username" name="name" placeholder="Enter Name">
+            </li>
+            <li>
+              <input type="email" id="email" name="email" placeholder="Enter Email">
+            </li>
+            <li>
+              <input type="number" id="number" name="number" placeholder="Enter Phone">
+            </li>
+            <li>
+              <input type="Message" id="text" name="text" placeholder="Enter Message">
+            </li>
+            <li>
+              <input type="button" class="btn2" value="Send Now">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-text">
+        <h1 class="heading">We take people on a tour of Rajasthan</h1>
+        <p class="about">A place that encompasses creativity in itself and culture in itself. Here you will feel yourself connected</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offer-cont">
+  <div class="summer-cont">
+    <div class="summer-offer">
+      <h1>WOULD YOU LIKE </h1>
+      <p class="choice"><span class="offer-text">GET 10%</span> SUMMER OFFER</p>
+      <p class="trip">on your first trip</p>
+    </div>
+    <div class="car"><img src="images/car.jpg"></div>
+  </div>
+</div>
+<div class="servicing">
+  <div class="container">
+    <div class="service-term">
+      <div class="service-term-box">
+        <h4 class="service">Services</h4>
+        <p class="service-tex1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p class="service-text2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+      </div>
+      <div class="servicing-cont">
+        <div class="term-box-1">
+          <div class="box">
+            <div class="pic"><img src="images/business.png"></div>
+            <h6 class="servicing-head">Business Travels</h6>
+            <p class="servicing-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed ac elit eros. Phasellus utaccumsan lectus.Suspendisse feugi tempus congue. Integersemper mollis nulla, u molestie enim.</p>
+          </div>
+          <div class="box">
+            <div class="pic"><img src="images/Event Transportation11.png"></div>
+            <h6 class="servicing-head">Event Transportation</h6>
+            <p class="servicing-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed ac elit eros. Phasellus utaccumsan lectus.Suspendisse feugi tempus congue. Integersemper mollis nulla, u molestie enim.</p>
+          </div>
+        </div>
+        <div class="term-box-2">
+          <div class="box">
+            <div class="pic"><img src="images/Corporate-Meet.png"></div>
+            <h6 class="servicing-head">Corporate Meet</h6>
+            <p class="servicing-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed ac elit eros. Phasellus utaccumsan lectus.Suspendisse feugi tempus congue. Integersemper mollis nulla, u molestie enim.</p>
+          </div>
+          <div class="box">
+            <div class="pic"><img src="images/Delegation.png"></div>
+            <h6 class="servicing-head">Delegation Movements</h6>
+            <p class="servicing-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.Sed ac elit eros. Phasellus utaccumsan lectus.Suspendisse feugi tempus congue. Integersemper mollis nulla, u molestie enim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+<div class="slide3_inner">
+  <div class="container clearfix">
+    <div id="content" class="grid_12">
+      <div class="about_cont">
+        <div class="title">Rates - Our Rental Car Rates</div>
+        <div class="text"> <span><img src="images/hand-icon2.png"></span>Cabs are available for tour all over India if you are starting from Jaipur or Delhi. <br>
+          <span><img src="images/hand-icon2.png"></span>Places to visit in Rajasthan: Ajmer, Pushkar, Udaipur, Jodhpur, Jaisalmer, Mt. Abu, Chittorgarh, Bikaner. <br>
+          <span><img src="images/hand-icon2.png"></span>Places to visit in Himachal Pradesh: Kulu, Manali, Shimla, Dharamsala, Dalhousie.<br>
+          <br>
+        </div>
+        
+        <!--tab content-->
+        <div class="tab-cont">
+          <div class="container"> 
+            
+            <!--tab content-->
+            <ul class="tabs left">
+              <li data-tab="main" class="active">Toyota Innova crysta</li>
+              <li data-tab="support" class="">Toyota Innova</li>
+              <li data-tab="support2" class="">Toyota Etios</li>
+              <li data-tab="support3" class="">Swift Dezire</li>
+              <li data-tab="support4" class="">Toyota Corola Altis</li>
+              <li data-tab="support5" class="">Toyota Fortuner</li>
+            </ul>
+            <div class="content"> 
+              <!-- 1 -->
+              <h3 class="v_tabs v_active" data-tab="main">Toyota Innova crysta</h3>
+              <div id="main" class="tab_content" style="display: block;">
+                <h3 class="toyota">Toyota Innova crysta</h3>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">RS 13/km</div>
+                      <div class="gray-box">250km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">RS 250/hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/Crysta-2020.jpg"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are payable on actual basis</p>
+                  <br>
+                  <br>
+                  <!--<input name="" type="button" class="btn" value="Reserve">--> 
+                  <a class="btn" data-popup-open="popup-1" href="#">Reserve</a> </div>
+              </div>
+              <!-- 1 --> 
+              
+              <!-- 2 -->
+              <h3 class="v_tabs last" data-tab="support">Toyota Innova</h3>
+              <div id="support" class="tab_content" style="display: none;">
+                <h2>Toyota Innova</h2>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">RS 11/km</div>
+                      <div class="gray-box">250km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">RS 220/hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/toyota innova.jpg"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are<br>
+                    payable on actual basis</p>
+                  <br>
+                  <br>
+                  <input name="" type="button" class="btn" value="Reserve">
+                </div>
+              </div>
+              <!-- 2 --> 
+              <!-- 3 -->
+              <h3 class="v_tabs last" data-tab="support2">Toyota Etios</h3>
+              <div id="support2" class="tab_content" style="display: none;">
+                <h2>Toyota Etios</h2>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">Rs 8.50/km</div>
+                      <div class="gray-box">250km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">Rs 180/ hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/toyota-corolla-altis2.jpg"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are payable on actual basis</p>
+                  <br>
+                  <br>
+                  <input name="" type="button" class="btn" value="Reserve">
+                </div>
+              </div>
+              <!-- 3 --> 
+              
+              <!-- 4 -->
+              <h3 class="v_tabs last" data-tab="support3">Swift Dezire</h3>
+              <div id="support3" class="tab_content" style="display: none;">
+                <h2>Swift Dezire</h2>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">Rs 8.50/km</div>
+                      <div class="gray-box">250km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">Rs 180/ hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/Swift-Dzire.jpg"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are payable on actual basis</p>
+                  <br>
+                  <br>
+                  <input name="" type="button" class="btn" value="Reserve">
+                </div>
+              </div>
+              <!-- 4 --> 
+              <!-- 5 -->
+              <h3 class="v_tabs last" data-tab="support4">Toyota Corola Altis</h3>
+              <div id="support4" class="tab_content" style="display: none;">
+                <h2>Toyota Corola Altis</h2>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">Rs 22/km</div>
+                      <div class="gray-box">250 km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">Rs 300/ hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/toyota-corolla-altis2.jpg"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are payable on actual basis</p>
+                  <br>
+                  <br>
+                  <button type="button" id="button" onClick="getInfo()">Send Now</button>
+                </div>
+              </div>
+              <!-- 5 --> 
+              <!-- 6 -->
+              <h3 class="v_tabs last" data-tab="support5">Toyota Fortuner</h3>
+              <div id="support5" class="tab_content" style="display: none;">
+                <h2>Toyota Fortuner</h2>
+                <div class="tab_block">
+                  <div class="mybox">
+                    <div class="blue">
+                      <div class="blue-box">Base Fare</div>
+                      <div class="blue-box">Minium Billing</div>
+                      <div class="blue-box">Driver Allowance</div>
+                      <div class="blue-box">Local visit</div>
+                    </div>
+                    <div class="gray">
+                      <div class="gray-box">Rs 32/km</div>
+                      <div class="gray-box">250km/day</div>
+                      <div class="gray-box">RS 200/day</div>
+                      <div class="gray-box">Rs 500/ hr</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="tab_block1"><img src="images/toyota-fortuner3.png"></div>
+                  <br>
+                  <br>
+                  <p class="text">All tolls charges, interstate taxes, entry charges & parking charges are payable on actual basis</p>
+                  <br>
+                  <br>
+                  <input name="" type="button" class="btn" value="Reserve">
+                </div>
+              </div>
+              <!-- 6 --> 
+            </div>
+            
+            <!--****--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-us">
+    <div class="container">
+      <h4 class="contact-head">Contact Us</h4>
+      <p class="contact-text">You have any questions or need any information?</p>
+      <div class="form-cont">
+        <div class="img-cont">
+          <div class="address">
+            <h5 class="section-10-text">Office Address</h5>
+            <p class="section-10-text2"><b>Address:</b> NGH 39, Tonk Road, Nehru Palace Jaipur,
+              PIN:302001.</p>
+          </div>
+          <div class="address-1">
+            <h5 class="section-10-text">Head Office</h5>
+            <p class="section-10-text2"><b>Address:</b> 25,Radhika Puram Jagatpura, Jaipur
+              PIN:302025.
+              PIN:302001.</p>
+          </div>
+        </div>
+        <div class="text-box1">
+		
+       
+			<form name="form" method="post" onSubmit="return validate()">
+ <select name="car" id="car">
+<option value="Select">Select Your car type</option>
+<option value="Delhi">Toyota Innova crysta</option>
+<option value="Jaipur">Toyota Innova</option>
+<option value="Agra">Swift Dezire</option>
+<option value="Bangalore">Toyota Corola Altis</option>
+<option value="Pune">Toyota Fortuner</option>
+</select>
+</form>
+          <ul class="section-9" >
+            <li>
+              <input type="text" id="name" name="name" placeholder="Enter Name">
+              <lable id="usnm"></lable>
+            </li>
+            <li>
+              <input type="email" id="email" name="email" placeholder="Enter Email">
+              <lable id="mail"></lable>
+            </li>
+            <li>
+              <input type="number" id="number" name="number" placeholder="Enter Phone">
+              <lable id="num"></lable>
+            </li>
+            <li>
+              <!--<input type="Message" id="text" name="text" placeholder="Enter Message">
+              <lable id="msg"></lable>-->
+				<label for="message_area">No more than 100 characters</label>
+  <p>
+  <textarea id="message_area" maxlength="100" rows="6" cols="70"></textarea>
+  </p>
+  <span class="hint" id="textarea_message"></span>
+            </li>
+            <button type="button" id="btn" onClick="getInfo()" value="">Send Now</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="circle">
+    <div class="container">
+      <div class="circleBase circle1"></div>
+      <p class="faq">Frequently Asked Questions</p>
+      <div class="accordian">
+        <div class="accordian-box1">
+          <button class="accordion">Are Your Service Easy To Use?</button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+          <button class="accordion">Is This Service Work In My Country?</button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+          <button class="accordion">Will I Receive Future Update?</button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+        </div>
+        <div class="accordian-box2">
+          <button class="accordion">Are Your Service Easy To Use? </button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+          <button class="accordion">Are Your Service Easy To Use?</button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+          <button class="accordion">Are Your Service Easy To Use? </button>
+          <div class="panel">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, eiusmod. Brunch 3 wolf moon tempor, iunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="blog">PUBLISH WHAT YOU THINK</p>
+  <p class="blog1">RECENT PICTURES</p>
+  <div class="pic-cont">
+    <div class="picture1"><img src="images/statue.jpg"></div>
+    <div class="picture2"><img src="images/Wooden-Crafts.jpg"></div>
+    <div class="picture3"><img src="images/jewellery.jpg"></div>
+    <div class="picture4"><img src="images/maxresdefault.jpg"></div>
+  </div>
+  <div class="locate">
+    <div class="container">
+      <h5 class="direction"> Locate Us </h5>
+    </div>
+  </div>
+  <div class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7285827.413222752!2d66.83024415000001!3d26.91831500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6adbe0a7c29%3A0x5bc1f3b776d481f8!2sDepartment%20of%20Tourism%2C%20Government%20of%20Rajasthan!5e0!3m2!1sen!2sin!4v1668083878883!5m2!1sen!2sin" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="bcv"></iframe>
+  </div>
+  <div class="footer">
+    <div class="foot-nav">
+      <ul class="navigation">
+        <li data-slide="1">Home</li>
+        <li data-slide="2">About Us</li>
+        <li data-slide="3">Rates</li>
+        <li data-slide="4">Service</li>
+        <li data-slide="5">Contact Us</li>
+      </ul>
+    </div>
+    <div class="end-text">
+      <p class="copyright">&#169 Pride Tours and Travels.2017<br>
+        All rights reserved.</p>
+    </div>
+  </div>
+</div>
+<style>
+
+<!-- Back to top button -->
+<a id="button"></a>
+</style>
+<div class="up-symbol"><img src="Images/up-arrow.png" onclick="scrollToTop()"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+<script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "80%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script> 
+<script>
+        var acc = document.getElementsByClassName("menu_accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("menu_active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+	
+	
+		function getInfo(){
+			var sel = document.getElementById("city");
+//get the selected option
+var selectedText = sel.options[sel.selectedIndex].text;
+		var jsname = document.getElementById("name").value;
+		var jsmail = document.getElementById("email").value;
+		var jsnunm = document.getElementById("number").value;
+
+			if(jsname == ""){
+				document.getElementById("usnm").innerHTML = "please enter your name";
+					document.getElementById("usnm").style.display = "inline";
+					document.getElementById("usnm").style.color = "red";
+			}
+		else if(jsname != ""){
+			document.getElementById("usnm").style.display = "none";
+		}
+		//email
+			if(jsname == ""){
+				document.getElementById("mail").innerHTML = "please enter your Email";
+					document.getElementById("mail").style.display = "inline";
+					document.getElementById("mail").style.color = "red";
+			}
+		else if(jsname != ""){
+			document.getElementById("mail").style.display = "none";
+		}
+				if(jsname == ""){
+				document.getElementById("num").innerHTML = "please enter yourphone number";
+					document.getElementById("num").style.display = "inline";
+					document.getElementById("num").style.color = "red";
+			}
+		else if(jsname != ""){
+			document.getElementById("num").style.display = "none";
+		}
+		}
+    </script> 
+<script>
+   		var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                for (let i = 0; i < acc.length; i++) {
+                    acc[i].classList.remove('active');
+                    acc[i].style.maxHeight = null;
+                    acc[i].nextElementSibling.style.maxHeight = null;
+                }
+                this.style.maxHeight = this.scrollHeight + 'px';
+                this.classList.add('active');
+                var panel = this.nextElementSibling;
+                panel.style.maxHeight = panel.scrollHeight + 'px'
+            }
+        }
+    </script> 
+<!--form validation--> 
+<script>
+
+
+	</script>
+<script language="Javascript">
+function getInfo()
+{
+if(document.form.car.selectedIndex=="")
+{
+alert ( "Please select car!");
+return false;
+}
+var sel = document.getElementById("car");
+//get the selected option
+var selectedText = sel.options[sel.selectedIndex].text;
+alert("You have selected : "+selectedText);
+return true;
+}
+	
+$('textarea#message_area').on('keyup',function() 
+{
+  var maxlen = $(this).attr('maxlength');
+  
+  var length = $(this).val().length;
+  if(length > (maxlen-10) ){
+    $('#textarea_message').text('max length '+maxlen+' characters only!')
+  }
+  else
+    {
+      $('#textarea_message').text('');
+    }
+});
+</script>
+</body>
+</html>
